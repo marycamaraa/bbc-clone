@@ -1,0 +1,62 @@
+/* Global colour palette */
+
+/* Universal colours: These colours are the same across all brands */
+:root {
+  --night-grey: #0e0e0e;
+  --grey-600-a: #363636;
+  --grey-500-b: #505050;
+  --grey-400-c: #6b6b6b;
+  --grey-300-c: #c0c0c0;
+  --grey-200-b: #d6d6d6;
+  --grey-100-a: #eeeeee;
+  --white: #ffffff;
+}
+
+/*Info */
+:root {
+  --info-dark: #0050b3;
+  --info-primary: #0065e0;
+  --info-light: #a8cfff;
+}
+
+/* Success */
+:root {
+  --success-dark: #14612a;
+  --success-primary: #197b35;
+  --success-light: #6fe290;
+}
+
+/* Warning */
+:root {
+  --warning-dark: #af842a;
+  --warning-primary: #fbbd3d;
+  --warning-light: #fedb8b;
+}
+
+/* Error */
+:root {
+  --error-dark: #9b2927;
+  --error-primary: #c43331;
+  --error-light: #eebfbe;
+}
+
+/* Dark mode pallete */
+:root {
+  --very-dark: #dcd9e4;
+  --dark: #ada6c2;
+  --primary: #8b81a8;
+  --secondary: #e67020;
+  --light: #59526c;
+  --very-light: #373343;
+}
+
+/* Nav colour items */
+:root {
+  --darkest-black: rgb(0, 0, 0);
+  --bright-red: rgb(235, 0, 0);
+  --bright-yellow: rgb(255, 186, 0);
+  --bright-blue: rgb(6, 126, 179);
+  --bright-pink: rgb(255, 76, 152);
+  --bright-orange: rgb(250, 100, 0);
+  --bright-purple: rgb(150, 60, 225);
+}
