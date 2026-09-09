@@ -1,19 +1,98 @@
 .nav-container {
   display: flex;
-  justify-content: center;
-  border-bottom: 1px solid grey;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid var(--grey-200-b);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
   gap: 20px;
 }
 
 .nav-links a {
+  padding: 10px;
+  margin: 0;
   color: #111;
   text-decoration: none;
   font-weight: bold;
   margin-top: 2px solid red;
+}
+
+.nav-links li {
+  display: flex;
+  
+}
+
+/* nav icons */
+.for-you {
+  display: flex;
+  padding: -6px;
+  gap: 20px;
+}
+
+.bbc-logo {
+  height: 86px;
+  width: 128px;
+}
+.notification {
+  display: flex;
+  padding: 20px;
+  margin: 0 0 0 0 8px;
+  height: 50px;
+  width: 80px;
+  :hover {
+    border-bottom: 2px solid var(--darkest-black);
+  }
+}
+
+.profile {
+  display: flex;
+  padding: 20px;
+  margin: 0 0 0 0 8px;
+  height: 50px;
+  width: 80px;
+
+  p {
+    white-space: nowrap;
+    gap: 2px;
+  }
+}
+
+.profile:hover {
+  border-bottom: 2px solid var(--bright-blue);
+}
+
+/* nav item colour */
+.home:hover {
+  border-bottom: 2px solid var(--darkest-black);
+}
+.news:hover {
+  border-bottom: 2px solid var(--bright-red);
+}
+
+.sport:hover {
+  border-bottom: 2px solid var(--bright-yellow);
+}
+.weather:hover {
+  border-bottom: 2px solid var(--bright-blue);
+}
+
+.iplayer:hover {
+  border-bottom: 2px solid var(--bright-pink);
+}
+
+.bitesize:hover {
+  border-bottom: 2px solid var(--bright-purple);
+}
+
+.top-icons {
+  display: flex;
+  width: 50px;
+  height: 50px;
 }
