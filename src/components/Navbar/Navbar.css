@@ -26,7 +26,6 @@
 
 .nav-links li {
   display: flex;
-  
 }
 
 /* nav icons */
@@ -62,6 +61,14 @@
     white-space: nowrap;
     gap: 2px;
   }
+}
+
+.nav-search {
+  background-color: var(--grey-100-a);
+  border: none;
+  font-weight: bold;
+  width: 200px;
+  height: 40px;
 }
 
 .profile:hover {

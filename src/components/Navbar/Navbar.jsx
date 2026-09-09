@@ -51,6 +51,11 @@ function Navbar() {
           </Link>
         </li>
       </ul>
+      <div>
+        <form action="./search">
+          <input className="nav-search" placeholder="search BBC"></input>
+        </form>
+      </div>
     </nav>
   );
 }
