@@ -1,22 +1,26 @@
 .nav-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--grey-200-b);
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 10px 20px;
 }
 
 .nav-links {
   display: flex;
-  justify-content: space-between;
   list-style: none;
   gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+.nav-links li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .nav-links a {
-  padding: 10px;
+  padding: 1px;
   margin: 0;
   color: #111;
   text-decoration: none;
@@ -24,13 +28,14 @@
   margin-top: 2px solid red;
 }
 
-.nav-links li {
+.nav-links :link {
   display: flex;
 }
 
 /* nav icons */
 .for-you {
   display: flex;
+  align-items: center;
   padding: -6px;
   gap: 20px;
 }
@@ -43,11 +48,15 @@
   display: flex;
   padding: 20px;
   margin: 0 0 0 0 8px;
-  height: 50px;
-  width: 80px;
+  height: 30px;
+  width: 30px;
   :hover {
     border-bottom: 2px solid var(--darkest-black);
   }
+}
+.more {
+  height: 50px;
+  width: 80px;
 }
 
 .profile {
@@ -100,6 +109,6 @@
 
 .top-icons {
   display: flex;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }

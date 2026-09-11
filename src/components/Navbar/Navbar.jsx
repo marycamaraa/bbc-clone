@@ -21,41 +21,42 @@ function Navbar() {
           </Link>
         </li>
         <li>
+          <img src="src/assets/icons/news.svg" className="top-icons" />
           <Link to="/news" className="news">
             News
-            <img src="src/assets/icons/news.svg" className="top-icons" />
           </Link>
         </li>
         <li>
+          <img src="src/assets/icons/sport.svg" className="top-icons" />
           <Link to="/sport" className="sport">
             Sport
-            <img src="src/assets/icons/sport.svg" className="top-icons" />
           </Link>
         </li>
         <li>
+          <img src="src/assets/icons/weather.svg" className="top-icons" />
           <Link to="/weather" className="weather">
             Weather
-            <img src="src/assets/icons/weather.svg" className="top-icons" />
           </Link>
         </li>
         <li>
+          <img src="src/assets/icons/iplayer.svg" className="top-icons" />
           <Link to="/iplayer" className="iplayer">
             iplayer
-            <img src="src/assets/icons/iplayer.svg" className="top-icons" />
           </Link>
         </li>
         <li>
+          <img src="src/assets/icons/bitesize.svg" className="top-icons" />
           <Link to="/bitesize" className="bitesize">
             Bitesize
-            <img src="src/assets/icons/bitesize.svg" className="top-icons" />
           </Link>
         </li>
+        <Link to="/more" className="more">
+          <img src="src/assets/icons/more.svg" className="top-icons" />
+        </Link>
       </ul>
-      <div>
-        <form action="./search">
-          <input className="nav-search" placeholder="search BBC"></input>
-        </form>
-      </div>
+      <form action="./search">
+        <input className="nav-search" placeholder="search BBC"></input>
+      </form>
     </nav>
   );
 }
