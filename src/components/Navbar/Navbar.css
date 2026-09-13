@@ -1,67 +1,89 @@
 .nav-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid var(--grey-200-b);
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  border-bottom: 1px solid var(--grey-200-b);
 }
 
+.nav-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .nav-links {
   display: flex;
-  justify-content: space-between;
   list-style: none;
   gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+.nav-links li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .nav-links a {
-  padding: 10px;
+  padding: 1px;
   margin: 0;
   color: #111;
   text-decoration: none;
   font-weight: bold;
+  font-size: 0.8rem;
   margin-top: 2px solid red;
 }
 
-.nav-links li {
+.nav-links :link {
   display: flex;
-  
 }
 
 /* nav icons */
 .for-you {
   display: flex;
+  align-items: center;
   padding: -6px;
   gap: 20px;
 }
 
 .bbc-logo {
-  height: 86px;
-  width: 128px;
+  height: 110px;
+  width: 140px;
 }
 .notification {
   display: flex;
   padding: 20px;
-  margin: 0 0 0 0 8px;
-  height: 50px;
-  width: 80px;
+  height: 20px;
+  width: 20px;
   :hover {
     border-bottom: 2px solid var(--darkest-black);
   }
 }
+.more {
+  height: 40px;
+  width: 70px;
+}
 
 .profile {
   display: flex;
-  padding: 20px;
+  align-items: center;
+
   margin: 0 0 0 0 8px;
-  height: 50px;
-  width: 80px;
 
   p {
+    font-size: 0.8rem;
+    font-weight: bold;
     white-space: nowrap;
     gap: 2px;
   }
+}
+
+.nav-search {
+  background-color: var(--grey-100-a);
+  border: none;
+  font-weight: bold;
+  width: 200px;
+  height: 40px;
 }
 
 .profile:hover {
@@ -90,9 +112,12 @@
 .bitesize:hover {
   border-bottom: 2px solid var(--bright-purple);
 }
+.more:hover {
+  border-bottom: 2px solid var(--darkest-black);
+}
 
 .top-icons {
   display: flex;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
