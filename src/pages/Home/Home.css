@@ -1,7 +1,7 @@
 .home-list {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+  display: block;
+  flex: wrap;
+  gap: 10px 20px;
 }
 
 .home-list li {
