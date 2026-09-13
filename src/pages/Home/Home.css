@@ -1,3 +1,9 @@
-.hontainer {
-  background-color: red;
+.home-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.home-list li {
+  list-style: none;
 }
