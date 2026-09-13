@@ -2,9 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   border-bottom: 1px solid var(--grey-200-b);
 }
 
+.nav-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .nav-links {
   display: flex;
   list-style: none;
