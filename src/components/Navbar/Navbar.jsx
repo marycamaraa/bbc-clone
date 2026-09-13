@@ -7,7 +7,12 @@ function Navbar() {
       <div className="for-you">
         <img className="bbc-logo" src="src/assets/icons/bbc-logo.svg" />
         <a className="profile">
-          <img src="src/assets/icons/profile.svg" /> <p>For you </p>
+          <img
+            src="src/assets/icons/profile.svg"
+            height={"30px"}
+            width={"40px"}
+          />
+          <p>For you </p>
         </a>
         <a className="notification">
           <img src="src/assets/icons/notification.svg" />

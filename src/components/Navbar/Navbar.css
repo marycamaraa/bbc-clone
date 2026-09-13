@@ -3,7 +3,6 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--grey-200-b);
-  padding: 10px 20px;
 }
 
 .nav-links {
@@ -25,6 +24,7 @@
   color: #111;
   text-decoration: none;
   font-weight: bold;
+  font-size: 0.8rem;
   margin-top: 2px solid red;
 }
 
@@ -41,32 +41,32 @@
 }
 
 .bbc-logo {
-  height: 86px;
-  width: 128px;
+  height: 110px;
+  width: 140px;
 }
 .notification {
   display: flex;
   padding: 20px;
-  margin: 0 0 0 0 8px;
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   :hover {
     border-bottom: 2px solid var(--darkest-black);
   }
 }
 .more {
-  height: 50px;
-  width: 80px;
+  height: 40px;
+  width: 70px;
 }
 
 .profile {
   display: flex;
-  padding: 20px;
+  align-items: center;
+
   margin: 0 0 0 0 8px;
-  height: 50px;
-  width: 80px;
 
   p {
+    font-size: 0.8rem;
+    font-weight: bold;
     white-space: nowrap;
     gap: 2px;
   }
@@ -106,9 +106,12 @@
 .bitesize:hover {
   border-bottom: 2px solid var(--bright-purple);
 }
+.more:hover {
+  border-bottom: 2px solid var(--darkest-black);
+}
 
 .top-icons {
   display: flex;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
