@@ -1,9 +1,35 @@
-.home-list {
-  display: block;
-  flex: wrap;
-  gap: 10px 20px;
+.home-container {
+  background-color: #f8f8f8;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.grid {
+  display: grid;
+  background-color: var(--secondary-background);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 3fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 8px;
+  padding: 10px;
+  border-radius: 50px;
+}
+.div1 {
+  grid-row: span 5 / span 5;
+  background-color: var(--darkest-black);
 }
 
-.home-list li {
-  list-style: none;
+/* controls the item postions*/
+.div4 {
+  grid-column-start: 2;
+  background-color: var(--bright-orange);
+}
+
+.grid div {
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 100px;
+  color: black;
+  font-size: 50px;
+  font-weight: bolder;
 }
