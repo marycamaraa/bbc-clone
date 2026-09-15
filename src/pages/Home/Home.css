@@ -1,9 +1,11 @@
 .home-container {
   background-color: #f8f8f8;
-  max-width: 1200px;
+  align-items: center;
   margin: 0 auto;
   padding: 0 24px;
 }
+
+/* News headlines  */
 .grid {
   display: grid;
   background-color: var(--secondary-background);
@@ -14,18 +16,78 @@
   padding: 10px;
   border-radius: 50px;
 }
+
 .div1 {
+  grid-row: span 2 / span 2;
+}
+
+.div3 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.div4 {
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+.div5 {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+.grid div {
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 100px;
+  color: black;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+/* Sport headlines  */
+.gridOne {
+  display: grid;
+  background-color: var(--secondary-background);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 3fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 8px;
+  padding: 10px;
+  border-radius: 50px;
+}
+.Newsheadline1 {
   grid-row: span 5 / span 5;
   background-color: var(--darkest-black);
 }
 
 /* controls the item postions*/
-.div4 {
+.Newsheadline4 {
   grid-column-start: 2;
   background-color: var(--bright-orange);
 }
 
-.grid div {
+.gridOne div {
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 100px;
+  color: black;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+/* TV entertainment  */
+.gridThree {
+  display: grid;
+  background-color: var(--secondary-background);
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 8px;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.gridThree div {
   border: 2px solid black;
   border-radius: 3px;
   padding: 100px;
