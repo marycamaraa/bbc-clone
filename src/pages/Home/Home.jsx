@@ -3,17 +3,47 @@ import "./Home.css";
 function Home() {
   return (
     <div>
-      <div className="home-container">
+      {/* <div className="home-container">
         <h1>Welcome to the BBC</h1>
 
         <h2>News Headline</h2>
-        <div className="grid">
-          <div className="div1"></div>
-          <div className="div2">2</div>
-          <div className="div3">3</div>
-          <div className="div4">4</div>
-          <div className="div5">5</div>
-        </div>
+        <ul className="grid">
+          <li className="div1">
+            <img
+              src="src/assets/icons/placeholder.png"
+              width={"500px"}
+              height={"400px"}
+            />
+          </li>
+          <li className="div2">
+            <img
+              src="src/assets/icons/placeholder.png"
+              width={"400px"}
+              height={"200px"}
+            />
+          </li>
+          <li className="div3">
+            <img
+              src="src/assets/icons/placeholder.png"
+              width={"400px"}
+              height={"200px"}
+            />
+          </li>
+          <li className="div4">
+            <img
+              src="src/assets/icons/placeholder.png"
+              width={"400px"}
+              height={"200px"}
+            />
+          </li>
+          <li className="div5">
+            <img
+              src="src/assets/icons/placeholder.png"
+              width={"400px"}
+              height={"200px"}
+            />
+          </li>
+        </ul>
         <div>
           <h2>Sport Headline</h2>
           <div className="gridOne">
@@ -35,7 +65,7 @@ function Home() {
           </div>
           <div></div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
