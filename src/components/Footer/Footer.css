@@ -1,0 +1,23 @@
+.footer-container {
+  background-color: var(--darkest-black);
+  border: 2px solid green;
+  padding: 5rem;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid var(--grey-400-c);
+  align-items: center;
+}
+
+.footer-list li {
+  font-size: 0.8rem;
+  padding: 0.8rem;
+  color: var(--white);
+  font-weight: bolder;
+  list-style: none;
+}
+p {
+  color: white;
+}
