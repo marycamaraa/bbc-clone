@@ -15,6 +15,7 @@ body {
 }
 .main-content {
   flex: 1;
+  background-color: var(--grey-100-a);
 }
 
 .content-container {
