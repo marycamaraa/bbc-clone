@@ -1,6 +1,8 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer.js";
+
 import "./styles/global.css";
 
 import Home from "./pages/Home/Home";
@@ -12,18 +14,26 @@ import Bitesize from "./pages/Bitesize/bitesize";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
+    <div className="app">
+      <BrowserRouter>
+        <Navbar />
 
-      <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/news" element={<News />} />
-        <Route path="/sport" element={<Sport />} />
-        <Route path="/weather" element={<Weather />} />
-        <Route path="/iplayer" element={<IPlayer />} />
-        <Route path="/bitesize" element={<Bitesize />} />
-      </Routes>
-    </BrowserRouter>
+        <main className="main-content">
+          <div className="content-container">
+            <Routes>
+              <Route path="/home" element={<Home />} />
+              <Route path="/news" element={<News />} />
+              <Route path="/sport" element={<Sport />} />
+              <Route path="/weather" element={<Weather />} />
+              <Route path="/iplayer" element={<IPlayer />} />
+              <Route path="/bitesize" element={<Bitesize />} />
+            </Routes>
+          </div>
+        </main>
+
+        <Footer />
+      </BrowserRouter>
+    </div>
   );
 }
 

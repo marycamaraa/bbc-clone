@@ -13,7 +13,7 @@
   --black: #020202;
 }
 
-/*Info */
+/* Info */
 :root {
   --info-dark: #0050b3;
   --info-primary: #0065e0;
@@ -60,4 +60,9 @@
   --bright-pink: rgb(255, 76, 152);
   --bright-orange: rgb(250, 100, 0);
   --bright-purple: rgb(150, 60, 225);
+}
+
+/* Background theme */
+:root {
+  --secondary-background: #f5f5f5;
 }

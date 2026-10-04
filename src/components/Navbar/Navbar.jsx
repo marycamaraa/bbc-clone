@@ -4,7 +4,7 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <nav className="nav-container">
-      <div className="container nav-content">
+      <div className="content-container  nav-content">
         <div className="for-you">
           <img className="bbc-logo" src="src/assets/icons/bbc-logo.svg" />
           <a className="profile">
