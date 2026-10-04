@@ -1,0 +1,22 @@
+.news-container {
+  background-color: var(--another-red);
+  width: 100%;
+}
+
+.page-title {
+  font-size: 4rem;
+  font-weight: 200;
+  color: var(--white);
+}
+
+.news-list-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+
+  list-style: none;
+}
+
+.news-list-links li {
+  color: white;
+}
