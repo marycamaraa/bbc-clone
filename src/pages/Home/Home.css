@@ -1,3 +1,16 @@
+.title {
+  background-color: lightgrey;
+  width: 500px;
+  height: 400px;
+}
+.paragraph {
+  color: red;
+}
+
+.headline li {
+  font-style: none;
+  text-decoration: none;
+}
 .home-container {
   background-color: #f8f8f8;
   align-items: center;
