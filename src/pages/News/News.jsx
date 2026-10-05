@@ -1,12 +1,7 @@
 import "./News.css";
-import NewsNavbar from "../../components/NewsNavbar/NewsNavbar";
 
 function News() {
-  return (
-    <>
-      <NewsNavbar />
-    </>
-  );
+  return <></>;
 }
 
 export default News;
