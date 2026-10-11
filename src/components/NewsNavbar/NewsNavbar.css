@@ -1,6 +1,5 @@
 .news-container {
   background-color: var(--another-red);
-  width: 100%;
 }
 
 .page-title {
@@ -24,6 +23,7 @@
 
 .news-list-links li {
   position: relative;
+  margin: 0;
   padding: 0 16px 0 0;
   color: white;
 }

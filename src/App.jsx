@@ -1,7 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import NewsNavbar from "./components/NewsNavbar/NewsNavbar.jsx";
 import Footer from "./components/Footer/Footer.js";
 
 import "./styles/global.css";
@@ -18,7 +17,7 @@ function App() {
     <div className="app">
       <BrowserRouter>
         <Navbar />
-        <NewsNavbar />
+
 
         <main className="main-content">
           <div className="content-container">
