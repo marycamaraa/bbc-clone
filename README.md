@@ -1,4 +1,4 @@
-## BBC News Clone
+## BBC Clone Website
 
 A responsive news platform inspired by the BBC News website, built using React and JavaScript. The application allows users to browse news articles, search for content, and view stories by category.
 
