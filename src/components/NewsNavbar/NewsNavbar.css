@@ -1,16 +1,23 @@
 .news-container {
   background-color: var(--another-red);
+  display: flex;
+  justify-content: center;
+}
+
+.news-navbar-inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0;
+  padding: 16px 24px;
+  box-sizing: border-box;
 }
 
 .page-title {
   font-size: 3rem;
   font-weight: 510;
   color: var(--white);
-  border-bottom: 2px solid;
-}
-.news-navbar-content {
-  align-items: center;
-  width: 100%;
+  width: 50vw;
+  border-bottom: 1px solid rgb(255, 254, 254);
 }
 
 .news-list-links {
