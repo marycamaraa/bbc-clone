@@ -1,5 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer.js";
 
@@ -18,18 +19,15 @@ function App() {
       <BrowserRouter>
         <Navbar />
 
-        <main className="main-content">
-          <div className="content-container">
-            <Routes>
-              <Route path="/home" element={<Home />} />
-              <Route path="/news" element={<News />} />
-              <Route path="/sport" element={<Sport />} />
-              <Route path="/weather" element={<Weather />} />
-              <Route path="/iplayer" element={<IPlayer />} />
-              <Route path="/bitesize" element={<Bitesize />} />
-            </Routes>
-          </div>
-        </main>
+        <Routes>
+          <Route path="/home" element={<Home />} />
+         
+          <Route path="/news" element={<News />} />
+          <Route path="/sport" element={<Sport />} />
+          <Route path="/weather" element={<Weather />} />
+          <Route path="/iplayer" element={<IPlayer />} />
+          <Route path="/bitesize" element={<Bitesize />} />
+        </Routes>
 
         <Footer />
       </BrowserRouter>
