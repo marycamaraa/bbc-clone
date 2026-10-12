@@ -1,10 +1,15 @@
+import { Outlet } from "react-router-dom";
+import NewsLayout from "../../../layouts/NewsLayout";
 import "./News.css";
-import NewsNavbar from "../../components/NewsNavbar/NewsNavbar.jsx";
-
 function News() {
   return (
     <>
-      <NewsNavbar />
+      <NewsLayout />
+      <main className="main-content">
+        <div className="content-container">
+          <Outlet />
+        </div>
+      </main>
     </>
   );
 }

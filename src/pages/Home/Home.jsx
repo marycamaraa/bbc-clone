@@ -2,9 +2,11 @@ import "./Home.css";
 
 function Home() {
   return (
-      <main-content>
-        <h1>Welcome to the BBC</h1>
-      </main-content>
+    <main className="main-content">
+      <div className="content-container">
+        <h1>welcome home</h1>
+      </div>
+    </main>
   );
 }
 export default Home;
