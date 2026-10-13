@@ -1,7 +1,5 @@
 .news-container {
   background-color: var(--another-red);
-  display: flex;
-  justify-content: center;
 }
 
 .news-navbar-inner {
@@ -10,14 +8,18 @@
   margin: 0;
   padding: 16px 24px;
   box-sizing: border-box;
+  margin-left: 580px;
+}
+
+.border-top-style {
+  border-bottom: 0.1rem solid var(--grey-200-b);
 }
 
 .page-title {
   font-size: 3rem;
   font-weight: 510;
   color: var(--white);
-  width: 50vw;
-  border-bottom: 1px solid rgb(255, 254, 254);
+  margin-left: 600px;
 }
 
 .news-list-links {
