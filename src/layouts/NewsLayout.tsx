@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import NewsNavbar from "../src/components/NewsNavbar/NewsNavbar";
+import NewsNavbar from "../components/NewsNavbar/NewsNavbar";
 
 function NewsLayout() {
   return (

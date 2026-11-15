@@ -1,0 +1,5 @@
+@import "../../styles/section-navbar.css";
+
+.sport-container {
+  background-color: var(--bright-yellow);
+}

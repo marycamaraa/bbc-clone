@@ -1,52 +1,5 @@
+@import "../../styles/section-navbar.css";
+
 .news-container {
   background-color: var(--another-red);
-}
-
-.news-navbar-inner {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0;
-  padding: 16px 24px;
-  box-sizing: border-box;
-  margin-left: 580px;
-}
-
-.border-top-style {
-  border-bottom: 0.1rem solid var(--grey-200-b);
-}
-
-.page-title {
-  font-size: 3rem;
-  font-weight: 510;
-  color: var(--white);
-  margin-left: 600px;
-}
-
-.news-list-links {
-  display: flex;
-  gap: 20px;
-  padding: 0;
-  margin: 2px;
-  list-style: none;
-}
-
-.news-list-links li {
-  position: relative;
-  margin: 0;
-  padding: 0 16px 0 0;
-  color: white;
-}
-
-.news-list-links li:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 5px;
-  height: calc(100%);
-  width: 1px;
-  background-color: var(--grey-300-c);
-}
-
-.news-list-links li:hover {
-  border-bottom: 10px solid white;
 }

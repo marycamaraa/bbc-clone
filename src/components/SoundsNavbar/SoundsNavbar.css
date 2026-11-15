@@ -1,0 +1,30 @@
+@import "../../styles/section-navbar.css";
+
+.sounds-container {
+  background-color: var(--bright-orange);
+}
+
+.sounds-container .section-navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 16px 32px;
+}
+
+.sounds-container .section-navbar-links {
+  align-self: center;
+}
+
+.sounds-container .section-navbar-links li {
+  display: flex;
+  align-items: center;
+}
+
+.sounds-container .section-navbar-links li:not(:last-child)::after {
+  content: none;
+}
+
+.sounds-container .section-navbar-links li:hover::before {
+  bottom: -6px;
+}

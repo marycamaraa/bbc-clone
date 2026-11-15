@@ -6,14 +6,20 @@ function Navbar() {
     <nav className="nav-container">
       <div className="nav-content">
         <div className="for-you">
-          <img className="bbc-logo" src="src/assets/icons/bbc-logo.svg" />
+          <Link to="/home" className="bbc-logo-link" aria-label="BBC Home">
+            <img
+              className="bbc-logo"
+              src="src/assets/icons/bbc-logo.svg"
+              alt="BBC"
+            />
+          </Link>
           <a className="profile">
             <img
               src="src/assets/icons/profile.svg"
               height={"30px"}
               width={"40px"}
             />
-            <p>For you </p>
+            <p>Sign in</p>
           </a>
           <a className="notification">
             <img src="src/assets/icons/notification.svg" />
@@ -32,24 +38,35 @@ function Navbar() {
               News
             </Link>
           </li>
+
           <li>
             <img src="src/assets/icons/sport.svg" className="top-icons" />
             <Link to="/sport" className="sport">
               Sport
             </Link>
           </li>
+
           <li>
             <img src="src/assets/icons/weather.svg" className="top-icons" />
             <Link to="/weather" className="weather">
               Weather
             </Link>
           </li>
+
           <li>
             <img src="src/assets/icons/iplayer.svg" className="top-icons" />
             <Link to="/iplayer" className="iplayer">
               iplayer
             </Link>
           </li>
+
+          <li>
+            <img src="src/assets/icons/sounds.svg" className="top-icons" />
+            <Link to="/sounds" className="sounds">
+              sounds
+            </Link>
+          </li>
+
           <li>
             <img src="src/assets/icons/bitesize.svg" className="top-icons" />
             <Link to="/bitesize" className="bitesize">

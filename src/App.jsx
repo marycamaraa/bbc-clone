@@ -11,6 +11,7 @@ import News from "./pages/News/News";
 import Sport from "./pages/Sport/Sport";
 import Weather from "./pages/Weather/Weather";
 import IPlayer from "./pages/iPlayer/IPlayer";
+import Sounds from "./pages/Sounds/Sounds.js";
 import Bitesize from "./pages/Bitesize/bitesize";
 
 function App() {
@@ -21,11 +22,12 @@ function App() {
 
         <Routes>
           <Route path="/home" element={<Home />} />
-         
+
           <Route path="/news" element={<News />} />
           <Route path="/sport" element={<Sport />} />
           <Route path="/weather" element={<Weather />} />
           <Route path="/iplayer" element={<IPlayer />} />
+          <Route path="/sounds" element={<Sounds />} />
           <Route path="/bitesize" element={<Bitesize />} />
         </Routes>
 

@@ -2,11 +2,15 @@ import "./NewsNavbar.css";
 
 function NewsNavbar() {
   return (
-    <div className="news-container">
-      <div className="page-title">NEWS</div>
-      <div className="border-top-style"></div>
-      <div className="news-navbar-inner">
-        <ul className="news-list-links">
+    <div className="section-navbar news-container">
+      <div className="section-navbar-inner">
+        <div className="section-navbar-title">NEWS</div>
+      </div>
+
+      <div className="section-navbar-divider"></div>
+
+      <div className="section-navbar-inner">
+        <ul className="section-navbar-links">
           <li>Home</li>
           <li>UK</li>
           <li>World</li>
@@ -18,6 +22,7 @@ function NewsNavbar() {
           <li>InDepth</li>
           <li>BBC Verify</li>
           <li>Climate</li>
+          <li>More</li>
         </ul>
       </div>
     </div>

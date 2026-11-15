@@ -1,0 +1,5 @@
+@import "../../styles/section-navbar.css";
+
+.bitesize-container {
+  background-color: var(--bright-purple);
+}

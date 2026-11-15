@@ -7,8 +7,10 @@
 
 .nav-content {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  width: calc(100% - 48px);
+  max-width: 1440px;
 }
 .nav-links {
   display: flex;
@@ -46,17 +48,16 @@
 }
 
 .bbc-logo {
+  display: block;
   height: 110px;
   width: 140px;
+  object-fit: cover;
 }
 .notification {
   display: flex;
   padding: 20px;
   height: 20px;
   width: 20px;
-  :hover {
-    border-bottom: 2px solid var(--darkest-black);
-  }
 }
 .more {
   height: 40px;
@@ -66,10 +67,12 @@
 .profile {
   display: flex;
   align-items: center;
+  color: #000;
 
   margin: 0 0 0 0 8px;
 
   p {
+    color: #000;
     font-size: 0.8rem;
     font-weight: bold;
     white-space: nowrap;
@@ -85,34 +88,51 @@
   height: 40px;
 }
 
-.profile:hover {
-  border-bottom: 2px solid var(--bright-blue);
+.nav-links li,
+.nav-container .bbc-logo-link,
+.nav-container .notification,
+.nav-container .more {
+  position: relative;
 }
 
-/* nav item colour */
-.home:hover {
-  border-bottom: 2px solid var(--darkest-black);
-}
-.news:hover {
-  border-bottom: 2px solid var(--bright-red);
-}
-
-.sport:hover {
-  border-bottom: 2px solid var(--bright-yellow);
-}
-.weather:hover {
-  border-bottom: 2px solid var(--bright-blue);
-}
-
-.iplayer:hover {
-  border-bottom: 2px solid var(--bright-pink);
+.nav-links li:hover::after,
+.nav-links li:focus-within::after,
+.nav-container .bbc-logo-link:hover::after,
+.nav-container .bbc-logo-link:focus-visible::after,
+.nav-container .notification:hover::after,
+.nav-container .more:hover::after,
+.nav-container .more:focus-visible::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: var(--nav-hover-color, var(--darkest-black));
 }
 
-.bitesize:hover {
-  border-bottom: 2px solid var(--bright-purple);
+.nav-links li:has(.news) {
+  --nav-hover-color: var(--bright-red);
 }
-.more:hover {
-  border-bottom: 2px solid var(--darkest-black);
+
+.nav-links li:has(.sport) {
+  --nav-hover-color: var(--bright-yellow);
+}
+
+.nav-links li:has(.weather) {
+  --nav-hover-color: var(--bright-blue);
+}
+
+.nav-links li:has(.iplayer) {
+  --nav-hover-color: var(--bright-pink);
+}
+
+.nav-links li:has(.sounds) {
+  --nav-hover-color: var(--bright-orange);
+}
+
+.nav-links li:has(.bitesize) {
+  --nav-hover-color: var(--bright-purple);
 }
 
 .top-icons {

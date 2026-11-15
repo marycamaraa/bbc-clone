@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
-import NewsLayout from "../../../layouts/NewsLayout";
+import NewsLayout from "../../layouts/NewsLayout";
 import "./News.css";
+
 function News() {
   return (
     <>
