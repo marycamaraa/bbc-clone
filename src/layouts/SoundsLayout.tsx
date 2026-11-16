@@ -3,7 +3,7 @@ import SoundsNavbar from "../components/SoundsNavbar/SoundsNavbar";
 
 function SoundsLayout() {
   return (
-    <div className="page-layout">
+    <div className="page-layout dark-theme">
       <SoundsNavbar />
 
       <main className="main-content">

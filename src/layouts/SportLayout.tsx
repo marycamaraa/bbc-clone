@@ -3,9 +3,9 @@ import SportNavbar from "../components/SportNavbar/SportNavbar";
 
 function SportLayout() {
   return (
-    <div className="page-layout">
+    <div className="page-layout dark-theme">
       <SportNavbar />
-
+      
       <main className="main-content">
         <div className="content-container">
           <Outlet />

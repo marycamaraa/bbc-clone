@@ -1,18 +1,8 @@
-import { Outlet } from "react-router-dom";
-import SportNavbar from "../../components/SportNavbar/SportNavbar";
 import "./Sport.css";
+import SportLayout from "../../layouts/SportLayout";
 
 function Sport() {
-  return (
-    <>
-      <SportNavbar />
-      <main className="main-content">
-        <div className="content container">
-          <Outlet />
-        </div>
-      </main>
-    </>
-  );
+  return <SportLayout />;
 }
 
 export default Sport;

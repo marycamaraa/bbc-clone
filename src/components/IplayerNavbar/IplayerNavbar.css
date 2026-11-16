@@ -1,5 +1,23 @@
 @import "../../styles/section-navbar.css";
 
 .iplayer-container {
-  background-color: var(--bright-pink);
+  background-color: var(--sounds-surface, #242424);
+}
+
+.iplayer-container > .section-navbar-divider {
+  display: none;
+}
+
+.iplayer-container .section-navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.iplayer-container .section-navbar-title {
+  color: var(--bright-pink);
+  font-size: 2.5rem;
+  font-weight: 700;
 }

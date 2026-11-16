@@ -12,6 +12,16 @@
   width: calc(100% - 48px);
   max-width: 1440px;
 }
+
+.profile,
+.notification,
+.nav-links,
+.nav-content > form {
+  position: relative;
+  top: -8px;
+  left: -8px;
+}
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -44,7 +54,19 @@
   display: flex;
   align-items: center;
   padding: -6px;
+  margin-right: 20px;
   gap: 20px;
+  position: relative;
+}
+
+.for-you::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 8px);
+  right: 7px;
+  height: 36px;
+  border-right: 1px solid var(--grey-300-c);
+  transform: translateY(-50%);
 }
 
 .bbc-logo {
@@ -55,9 +77,19 @@
 }
 .notification {
   display: flex;
-  padding: 20px;
-  height: 20px;
-  width: 20px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 60px;
+  width: 60px;
+  padding: 0;
+}
+
+.notification img {
+  display: block;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
 }
 .more {
   height: 40px;
@@ -65,19 +97,32 @@
 }
 
 .profile {
+  position: relative;
   display: flex;
   align-items: center;
+  box-sizing: border-box;
+  height: 60px;
+  top: 0;
+  min-width: 220px;
+  padding: 0 56px 0 0;
+  --nav-hover-color: var(--bright-blue);
   color: #000;
 
-  margin: 0 0 0 0 8px;
+  margin: 0;
 
   p {
     color: #000;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: bold;
     white-space: nowrap;
     gap: 2px;
   }
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
 .nav-search {
@@ -89,7 +134,6 @@
 }
 
 .nav-links li,
-.nav-container .bbc-logo-link,
 .nav-container .notification,
 .nav-container .more {
   position: relative;
@@ -97,8 +141,8 @@
 
 .nav-links li:hover::after,
 .nav-links li:focus-within::after,
-.nav-container .bbc-logo-link:hover::after,
-.nav-container .bbc-logo-link:focus-visible::after,
+.nav-container .profile:hover::after,
+.nav-container .profile:focus-visible::after,
 .nav-container .notification:hover::after,
 .nav-container .more:hover::after,
 .nav-container .more:focus-visible::after {
@@ -139,4 +183,35 @@
   display: flex;
   width: 30px;
   height: 30px;
+}
+
+.nav-container--dark {
+  --nav-hover-color: var(--white);
+  background-color: #121212;
+  color: var(--white);
+  border-bottom-color: var(--grey-600-a);
+  color-scheme: dark;
+}
+
+.nav-container--dark .nav-links a,
+.nav-container--dark .profile,
+.nav-container--dark .profile p {
+  color: var(--white);
+}
+
+.nav-container--dark .bbc-logo,
+.nav-container--dark .profile img,
+.nav-container--dark .notification img,
+.nav-container--dark .more img {
+  filter: brightness(0) invert(1);
+}
+
+.nav-container--dark .nav-search {
+  background-color: var(--grey-600-a);
+  color: var(--white);
+}
+
+.nav-container--dark .nav-search::placeholder {
+  color: var(--grey-200-b);
+  opacity: 1;
 }

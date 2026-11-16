@@ -1,9 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
+  const { pathname } = useLocation();
+  const darkRoutes = ["/sport", "/iplayer", "/sounds"];
+  const isDark = darkRoutes.some(
+    (route) => pathname === route || pathname.startsWith(`${route}/`),
+  );
+
   return (
-    <nav className="nav-container">
+    <nav className={`nav-container${isDark ? " nav-container--dark" : ""}`}>
       <div className="nav-content">
         <div className="for-you">
           <Link to="/home" className="bbc-logo-link" aria-label="BBC Home">

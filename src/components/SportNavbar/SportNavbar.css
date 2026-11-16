@@ -1,5 +1,11 @@
 @import "../../styles/section-navbar.css";
 
 .sport-container {
-  background-color: var(--bright-yellow);
+  background-color: var(--black);
+}
+
+.sport-container .section-navbar-title {
+  color: var(--bright-yellow);
+  font-size: 3rem;
+  font-weight: 700;
 }

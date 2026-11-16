@@ -1,5 +1,7 @@
 .section-navbar {
   width: 100%;
+  border-top: 1px solid var(--grey-300-c);
+  border-bottom: 1px solid var(--grey-300-c);
 }
 
 .section-navbar-inner {
@@ -19,7 +21,7 @@
 
 .section-navbar-divider {
   width: 100%;
-  border-bottom: 0.1rem solid var(--grey-200-b);
+  border-bottom: 1px solid var(--grey-300-c);
 }
 
 .section-navbar-links {
