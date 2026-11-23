@@ -25,12 +25,19 @@
 .sounds-container .section-navbar-links li {
   display: flex;
   align-items: center;
+  gap: 8px;
 }
 
 .sounds-container .section-navbar-links li:not(:last-child)::after {
   content: none;
 }
 
+.sounds-container .section-navbar-links li:hover {
+  color: var(--bright-orange);
+}
+
 .sounds-container .section-navbar-links li:hover::before {
-  bottom: -6px;
+  background-color: var(--bright-orange);
+  bottom: -2px;
+  height: 1px;
 }
