@@ -1,0 +1,98 @@
+.section-navbar {
+  width: 100%;
+  border-top: 1px solid var(--grey-300-c);
+  border-bottom: 1px solid var(--grey-300-c);
+}
+
+.section-navbar-inner {
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px max(24px, calc((100% - var(--page-content-width)) / 2));
+  padding-left: calc(
+    max(24px, (100% - var(--page-content-width)) / 2) +
+      var(--page-content-inset)
+  );
+  box-sizing: border-box;
+}
+
+.section-navbar-inner:has(> .section-navbar-title) {
+  padding-block: 4px;
+}
+
+.section-navbar-title {
+  font-size: 2.25rem;
+  font-weight: 510;
+  color: var(--white);
+  margin-left: 0;
+  padding: 0;
+}
+
+.section-navbar-divider {
+  width: 100%;
+  border-bottom: 1px solid var(--grey-300-c);
+}
+
+.section-navbar-links {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.8125rem;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.section-navbar-links li {
+  position: relative;
+  padding: 0 10px;
+  color: white;
+}
+
+.section-navbar-links:has(> .section-navbar-more) > li {
+  display: flex;
+  align-items: center;
+}
+
+.section-navbar-more {
+  gap: 6px;
+  margin-left: auto;
+}
+
+.section-navbar-links li:first-child {
+  padding-left: 0;
+}
+
+.section-navbar-links li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px;
+  width: 2px;
+  background-color: var(--grey-300-c);
+}
+
+.section-navbar-links li:has(+ .section-navbar-more)::after {
+  content: none;
+}
+
+.section-navbar-more::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -16px;
+  bottom: -16px;
+  width: 2px;
+  background-color: var(--grey-300-c);
+}
+
+.section-navbar-links li:hover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -16px;
+  height: 3px;
+  background-color: white;
+}

@@ -1,7 +1,8 @@
-import "./Sport";
+import "./Sport.css";
+import SportLayout from "../../layouts/SportLayout";
 
 function Sport() {
-  return <>Sport</>;
+  return <SportLayout />;
 }
 
 export default Sport;

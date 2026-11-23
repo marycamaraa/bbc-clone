@@ -9,6 +9,8 @@ body {
   min-height: 100vh;
 }
 .app {
+  --page-content-width: 1280px;
+  --page-content-inset: 83px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,8 +21,9 @@ body {
 }
 
 .content-container {
-  max-width: 1200px;
+  width: calc(100% - 48px);
+  max-width: var(--page-content-width);
   margin: 0 auto;
-  padding: 0 24px;
+  padding-left: var(--page-content-inset);
   box-sizing: border-box;
 }

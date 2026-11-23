@@ -1,0 +1,9 @@
+@import "../../styles/section-navbar.css";
+
+.news-container {
+  background-color: var(--another-red);
+}
+
+.news-container .section-navbar-more::after {
+  width: 1px;
+}

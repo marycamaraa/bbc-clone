@@ -1,0 +1,26 @@
+@import "../../styles/section-navbar.css";
+
+.bitesize-container {
+  background-color: var(--bright-purple);
+  border-bottom: none;
+}
+
+.bitesize-container .section-navbar-inner:has(> .section-navbar-links) {
+  background-color: var(--white);
+}
+
+.bitesize-container .section-navbar-links {
+  font-size: 1rem;
+}
+
+.bitesize-container .section-navbar-links li {
+  color: var(--black);
+}
+
+.bitesize-container .section-navbar-more::after {
+  width: 1px;
+}
+
+.bitesize-container .section-navbar-links li:hover::before {
+  background-color: var(--bright-purple);
+}
