@@ -1,4 +1,5 @@
 import "./SportNavbar.css";
+import { Menu } from "lucide-react";
 
 function SportNavbar() {
   return (
@@ -21,6 +22,10 @@ function SportNavbar() {
           <li>Boxing</li>
           <li>Athletics</li>
           <li>My Sport</li>
+          <li className="section-navbar-more">
+            <Menu size={20} aria-hidden="true" />
+            More
+          </li>
         </ul>
       </div>
     </div>

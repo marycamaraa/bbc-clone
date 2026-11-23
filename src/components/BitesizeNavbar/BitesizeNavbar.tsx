@@ -1,5 +1,5 @@
 import "./BitesizeNavbar.css";
-
+import { Menu } from "lucide-react";
 function BitesizeNavbar() {
   return (
     <div className="section-navbar bitesize-container">
@@ -19,6 +19,9 @@ function BitesizeNavbar() {
           <li>Parents </li>
           <li>Trending</li>
           <li>MyBitesize</li>
+          <li className="section-navbar-more">
+            <Menu size={20} aria-hidden="true" /> More
+          </li>
         </ul>
       </div>
     </div>

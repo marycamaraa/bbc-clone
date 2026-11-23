@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import { Search } from "lucide-react";
 import "./Navbar.css";
 
 function Navbar() {
@@ -69,7 +70,7 @@ function Navbar() {
           <li>
             <img src="src/assets/icons/sounds.svg" className="top-icons" />
             <Link to="/sounds" className="sounds">
-              sounds
+              Sounds
             </Link>
           </li>
 
@@ -79,12 +80,16 @@ function Navbar() {
               Bitesize
             </Link>
           </li>
-          <Link to="/more" className="more">
-            <img src="src/assets/icons/more.svg" className="top-icons" />
-          </Link>
+          <Link to="/more" className="more" aria-label="More" />
         </ul>
-        <form action="./search">
-          <input className="nav-search" placeholder="search BBC"></input>
+        <form action="./search" className="search-form">
+          <Search className="search-icon" size={20} aria-hidden="true" />
+          <input
+            className="nav-search"
+            type="search"
+            placeholder="Search BBC"
+            aria-label="Search BBC"
+          />
         </form>
       </div>
     </nav>

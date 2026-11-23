@@ -1,12 +1,12 @@
 @import "../../styles/section-navbar.css";
 
-.sounds-container {
+.section-navbar.sounds-container {
   background-color: var(--sounds-surface, #242424);
+  border-block-color: var(--grey-500-b);
 }
 
 .sounds-container .section-navbar-title {
   color: var(--bright-orange);
-  font-size: 2.5rem;
   font-weight: 700;
 }
 

@@ -1,7 +1,11 @@
 .footer-container {
   background-color: var(--darkest-black);
   border: 2px solid green;
-  padding: 5rem;
+  padding: 5rem 0;
+}
+
+.footer-container > .content-container {
+  width: calc(100% - 44px);
 }
 
 .footer-list {
@@ -9,7 +13,7 @@
   justify-content: space-between;
   border-top: 2px solid var(--grey-400-c);
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
 }
 
 .footer-list li {

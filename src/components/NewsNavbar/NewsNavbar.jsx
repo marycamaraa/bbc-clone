@@ -1,4 +1,5 @@
 import "./NewsNavbar.css";
+import { Menu } from "lucide-react";
 
 function NewsNavbar() {
   return (
@@ -22,7 +23,9 @@ function NewsNavbar() {
           <li>InDepth</li>
           <li>BBC Verify</li>
           <li>Climate</li>
-          <li>More</li>
+          <li className="section-navbar-more">
+            <Menu size={20} aria-hidden="true" /> More
+          </li>
         </ul>
       </div>
     </div>

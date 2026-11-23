@@ -1,11 +1,23 @@
 @import "../../styles/section-navbar.css";
 
-.sport-container {
+.section-navbar.sport-container {
   background-color: var(--black);
+  border-block-color: var(--grey-500-b);
 }
 
 .sport-container .section-navbar-title {
   color: var(--bright-yellow);
-  font-size: 3rem;
   font-weight: 700;
+}
+
+.sport-container .section-navbar-divider {
+  border-block-color: var(--grey-400-c);
+}
+
+.sport-container .section-navbar-more::after {
+  width: 1px;
+}
+
+.sport-container .section-navbar-links li:hover::before {
+  background-color: var(--bright-yellow);
 }

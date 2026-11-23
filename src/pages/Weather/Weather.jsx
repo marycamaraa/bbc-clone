@@ -7,7 +7,7 @@ function Weather() {
     <>
       <WeatherLayout />
       <main className="main-content">
-        <div className="content container">
+        <div className="content-container">
           <Outlet />
         </div>
       </main>
